@@ -3,5 +3,12 @@ var a = 3,
     operationArea = -7;
 console.log((a * a) - (2 * a * b) - (b * b));
 
-operationArea=-7 ? 'Great!' : 'Try again ;-)';
-console.log(operationArea);
+
+if (operationArea == -7) {
+    document.write('wynik ujemny');
+} else if (operationArea.length == +7) {
+    document.write('wynik dodatni');
+} else if (operationArea.length == 0) {
+    document.write('Wynik "0"');
+}
+
