@@ -1,14 +1,14 @@
-var a = 3,
-    b = 2,
-    operationArea = -7;
-console.log((a * a) - (2 * a * b) - (b * b));
+
+var a = prompt('Podaj dowolną liczbę "a"');
+    b = prompt('Podaj dowolną liczbę "b"');
+    operationArea = ((a * a) - (2 * a * b) - (b * b));
 
 
-if (operationArea == -7) {
+if (operationArea < 0) {
     document.write('wynik ujemny');
-} else if (operationArea.length == +7) {
+} else if (operationArea > 0) {
     document.write('wynik dodatni');
-} else if (operationArea.length == 0) {
+} else {
     document.write('Wynik "0"');
 }
 
